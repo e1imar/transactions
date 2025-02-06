@@ -9,5 +9,8 @@
     "start": "concurrently \"npm run --prefix frontend preview\" \"npm run --prefix backend start\"",
     "start:dev": "concurrently \"npm run --prefix frontend dev\" \"npm run --prefix backend start:dev\"",
     "build": "npm run build --workspace frontend && npm run build --workspace backend"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
   }
 }
